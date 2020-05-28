@@ -12,3 +12,6 @@ Using https://api.meteo.lt/
 
 ## API call example
 GET /api/products/recommended/akademija-2
+
+## Installation
+(not yet available)
