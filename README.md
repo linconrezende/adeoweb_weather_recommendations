@@ -1,6 +1,9 @@
 # AdeoWeb Whether Recommendations
 Simple REST API which returns product recommendations depending on current weather on Lithuanian cities.
 URL: GET /api/products/recommended/:city
+## DEMO
+(not yet available)
+
 ## Whether API
 Using https://api.meteo.lt/
 
