@@ -22,13 +22,7 @@ Route::prefix('api')->group(function () {
         return 'web route: API';
     });
     Route::prefix('products')->group(function () {
-        Route::get('/', function () {
-            // ProductController@index
-            return 'products';
-        });
-        Route::get('recommended/{city}', function ($city = '') {
-            // ProductRecomendationController@listByCity
-            return $city;
-        });
+        Route::get('/', 'ProductController@index');
+        Route::get('recommended/{city}', 'ProductController@currentWhetherRecommendationsByCity');
     });
 });
