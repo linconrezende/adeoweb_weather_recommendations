@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use SebastianBergmann\Environment\Console;
 
-class WhetherProductRecommendationSeeder extends Seeder
+class WeatherProductRecommendationSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,8 +12,8 @@ class WhetherProductRecommendationSeeder extends Seeder
      */
     public function run()
     {
-        //get all whether conditions
-        $conditions = App\WhetherCondition::get();
+        //get all weather conditions
+        $conditions = App\WeatherCondition::get();
         
         DB::beginTransaction();
         try {
@@ -29,9 +29,9 @@ class WhetherProductRecommendationSeeder extends Seeder
                 }
                 
                 foreach ($listProducts as $key => $p) {
-                    $rec = App\WhetherProductRecommendation::create([
+                    $rec = App\WeatherProductRecommendation::create([
                         'product_id' => $p->id,
-                        'whether_condition_id' => $c->id
+                        'weather_condition_id' => $c->id
                     ]);
                 }
             }

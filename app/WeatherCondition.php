@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class WhetherCondition extends Model
+class WeatherCondition extends Model
 {
     protected $fillable = [
         'name', 'description'

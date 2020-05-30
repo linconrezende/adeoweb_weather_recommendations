@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateWhetherProductRecommendationsTable extends Migration
+class CreateWeatherProductRecommendationsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreateWhetherProductRecommendationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('whether_product_recommendations', function (Blueprint $table) {
+        Schema::create('weather_product_recommendations', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('whether_condition_id')->unsigned()->nullable();
+            $table->bigInteger('weather_condition_id')->unsigned()->nullable();
             $table->bigInteger('product_id')->unsigned()->nullable();
             $table->timestamps();
-            $table->foreign('whether_condition_id')->references('id')->on('whether_conditions');
+            $table->foreign('weather_condition_id')->references('id')->on('weather_conditions');
             $table->foreign('product_id')->references('id')->on('products');
         });
     }
@@ -30,6 +30,6 @@ class CreateWhetherProductRecommendationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('whether_product_recommendations');
+        Schema::dropIfExists('weather_product_recommendations');
     }
 }

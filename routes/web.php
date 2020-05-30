@@ -23,6 +23,6 @@ Route::prefix('api')->group(function () {
     });
     Route::prefix('products')->group(function () {
         Route::get('/', 'ProductController@index');
-        Route::get('recommended/{city}', 'ProductController@currentWhetherRecommendationsByCity');
+        Route::get('recommended/{city}', 'ProductController@currentWeatherRecommendationsByCity');
     });
 });

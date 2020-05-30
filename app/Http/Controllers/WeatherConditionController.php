@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class WhetherProductRecommendationController extends Controller
+class WeatherConditionController extends Controller
 {
     //
 }
