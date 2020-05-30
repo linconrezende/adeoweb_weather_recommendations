@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateWhetherConditionsTable extends Migration
+class CreateWeatherConditionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateWhetherConditionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('whether_conditions', function (Blueprint $table) {
+        Schema::create('weather_conditions', function (Blueprint $table) {
             $table->id();
             $table->string('name', 50)->unique();
             $table->string('description', 50);
@@ -28,6 +28,6 @@ class CreateWhetherConditionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('whether_conditions');
+        Schema::dropIfExists('weather_conditions');
     }
 }

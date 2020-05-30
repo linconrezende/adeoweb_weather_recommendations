@@ -1,9 +1,9 @@
 <?php
 
-use App\WhetherCondition;
+use App\WeatherCondition;
 use Illuminate\Database\Seeder;
 
-class WhetherConditionSeeder extends Seeder
+class WeatherConditionSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,7 +12,7 @@ class WhetherConditionSeeder extends Seeder
      */
     public function run()
     {
-        WhetherCondition::insert([
+        WeatherCondition::insert([
             [ 'name' => 'clear', 'description' => 'clear' ],
             [ 'name' => 'isolated-clouds', 'description' => 'light clouds' ],
             [ 'name' => 'scattered-clouds', 'description' => 'cloudy with clear spells' ],
