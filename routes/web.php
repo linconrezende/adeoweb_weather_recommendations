@@ -16,3 +16,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+// Thi will overwrite the auth:api route. For now we don't need autentication
+Route::prefix('api')->group(function () {
+    Route::get('/', function () {
+        return 'web route: API';
+    });
+    Route::prefix('products')->group(function () {
+        Route::get('/', function () {
+            // ProductController@index
+            return 'products';
+        });
+        Route::get('recommended/{city}', function ($city = '') {
+            // ProductRecomendationController@listByCity
+            return $city;
+        });
+    });
+});
