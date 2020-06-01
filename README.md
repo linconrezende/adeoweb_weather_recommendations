@@ -14,11 +14,20 @@ Using https://api.meteo.lt/
 GET /api/products/recommended/akademija-2
 
 ## Installation
+### REQUIREMENTS
+PHP >= 7.3 AND database connection
 ### Clone folder:
 git clone https://github.com/linconrezende/adeoweb_weather_recommendations
 
 ### Install dependencies:
 composer install
+
+### Configuration
+Create a copy of the .env.example file and change it accordingly
+(database connection)
+
+### Generate a new key
+php artisan key:generate
 
 ### Migrate database:
 php artisan migrate
