@@ -16,5 +16,5 @@ class Product extends Model
     ];
     
     // To be treated as number
-    protected $casts = ['price' => 'float'];
+    protected $casts = ['price' => 'float(9,2)'];
 }
