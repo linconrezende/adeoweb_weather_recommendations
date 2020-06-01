@@ -1,8 +1,18 @@
 # AdeoWeb Weather Recommendations
 Simple REST API which returns product recommendations depending on current weather on Lithuanian cities.
 URL: GET /api/products/recommended/:city
-## DEMO
-(not yet available)
+# DEMO
+http://adeoweb.linconrezende.a2hosted.com/api/products/recommended/kaunas
+
+## About the project
+https://laravel.com/
+
+This project is part of the selection process to work for [Adeo Web](https://www.adeoweb.biz/)
+
+It was fun doing it. Laravel is a very powerful framework, the project is working but still a lot of features that I could do. Of course, it's allways a matter of time.
+I did this project to demonstrate my skills with Laravel.
+I never took any course, I just read the Laravel manual and learned from mistakes. I still have a lot to learn and I'm always reading the news, each new version of Laravel is a different surprise.
+To reproduce exactly the same result that I have today, I would use Lumen insted of Laravel, just because it's too simple but anyways I didn't know the scalability of this project so I did what was asked.
 
 ## Weather API
 Using https://api.meteo.lt/
